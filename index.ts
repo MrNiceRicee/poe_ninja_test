@@ -61,7 +61,7 @@ interface CurrencyFetch {
 
 async function start() {
   const data = await fetch("http:/poe.ninja/api/data/currencyoverview?league=Sanctum&type=Currency")
-    .then((res) => res.json())
+    .then((res) => res.json()) as CurrencyFetch;
   console.log(data)
 };
 
